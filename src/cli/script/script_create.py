@@ -33,7 +33,7 @@ def init(subparsers: argparse._SubParsersAction):
     :Tags: One or more tags to attach to the script.
 
     """
-    LOG.debug("Initialize subparser for the script-create command")
+    LOG.debug("Initialize subparser for the create command")
 
     subparser = subparsers.add_parser('create',
                                       help='Create a new script.')

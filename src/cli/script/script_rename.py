@@ -34,7 +34,7 @@ def init(subparsers: argparse._SubParsersAction):
     :param subparsers: Object that will contain the argument definitions.
     :type subparsers: ArgumentParser
     """
-    LOG.debug("Initialize subparser for the script-rename command")
+    LOG.debug("Initialize subparser for the rename command")
 
     subparser = subparsers.add_parser('rename',
                                       help='Rename a script.')

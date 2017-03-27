@@ -33,7 +33,7 @@ def init(subparsers: argparse._SubParsersAction):
     :param subparsers: Object that will contain the argument definitions.
     :type subparsers: ArgumentParser
     """
-    LOG.debug("Initialize subparser for the script-update command")
+    LOG.debug("Initialize subparser for the update command")
 
     subparser = subparsers.add_parser('update',
                                       help='Update an existing script.')

@@ -33,7 +33,7 @@ def init(subparsers: argparse._SubParsersAction):
     :param subparsers: Object that will contain the argument definitions.
     :type subparsers: ArgumentParser
     """
-    LOG.debug("Initialize subparser for the script-delete command")
+    LOG.debug("Initialize subparser for the delete command")
 
     subparser = subparsers.add_parser('delete',
                                       help='Delete an existing script.')
