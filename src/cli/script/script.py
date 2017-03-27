@@ -21,12 +21,14 @@ import typing
 from libnix.exception.nix_error import NixError
 
 from cli.script import script_create
+from cli.script import script_export
+from cli.script import script_delete
+from cli.script import script_import
 from cli.script import script_list
 from cli.script import script_rename
 from cli.script import script_run
 from cli.script import script_show
 from cli.script import script_update
-from cli.script import script_delete
 
 LOG = logging.getLogger(__name__)
 
@@ -48,6 +50,8 @@ def script(prog: str, args: typing.List[str]):
     _subparser = _parser.add_subparsers(title='Script')
 
     script_create.init(_subparser)
+    script_export.init(_subparser)
+    script_import.init(_subparser)
     script_delete.init(_subparser)
     script_list.init(_subparser)
     script_rename.init(_subparser)
